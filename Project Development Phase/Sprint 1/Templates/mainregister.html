@@ -31,16 +31,9 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">     
           <ul class="nav navbar-nav navbar-right">
-          <?php
-          if(isset($_SESSION['id_user']) && empty($_SESSION['companyLogged'])) {
-            ?>
-            <li><a href="user/dashboard.php">Dashboard</a></li>
-            <li><a href="logout.php">Logout</a></li>
-            <?php 
-            } else if(isset($_SESSION['id_user']) && isset($_SESSION['companyLogged'])){
-            ?>
-            <li><a href="company/dashboard.php">Dashboard</a></li>
-            <li><a href="logout.php">Logout</a></li>
+          
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="logout.html">Logout</a></li>
             <?php } else { 
             ?>
             <li style="padding-right: 25px;"><a href="search.php" style="font-size: 24px; color: #053a5a; line-height: 42px;">Search for Jobs</a></li>
@@ -68,12 +61,12 @@
   <div class="container" align="center">
     <div class="row">
       <div style="background-color: aqua; border: 1px solid black; width: 50%; height: 120px; border-radius: 5px;">
-        <h1 style="color: black; line-height: 75px;"><a href="register.php" style="color: black;"> Candidate Register </a></h1>
+        <h1 style="color: black; line-height: 75px;"><a href="register.html" style="color: black;"> Register </a></h1>
       </div>
       <br>
       <br>
       <div style="background-color: yellow; border: 1px solid black; width: 50%; height: 120px; border-radius: 5px;">
-        <h1 style="color: black; line-height: 75px;"><a href="company-register.php" style="color: black;"> Company Register </a></h1>
+        <h1 style="color: black; line-height: 75px;"><a href="register.html" style="color: black;">  Register </a></h1>
       </div>
     </div>
   </div>
@@ -86,7 +79,7 @@
 <footer id="footer" style="background-color: #053a5a; height: 80px;">
 
     <p style="color:white; font-size: 20px; line-height: 80px; text-align: center;"> 
-      Copyright &copy; 2018-2019 <a href="index.php" style="color:white;">JobDeck.com </a>
+      Copyright &copy; 2018-2019 <a href="index.php" style="color:white;">Recruitment System.com </a>
     </p>
 
     <div align="center" style="background-color: #053a5a; margin-top: -1.4%; height: 55px;">
