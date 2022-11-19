@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<form id="manage-application">
 		<input type="hidden" name="id" value="">
-		<input type="hidden" name="position_id" value="<?php echo $_GET['id'] ?>">
+		<input type="hidden" name="position_id" value=" $_GET['id'] ?>">
 	<div class="col-md-12">
 		<div class="row">
 			<h3>Application Form for <?php echo $position ?></h3>
